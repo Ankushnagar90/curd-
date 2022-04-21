@@ -1,0 +1,18 @@
+{% extends 'crud/home.html' %}
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-4">
+    <h2>add student</h2>
+
+    <form action="" method="POST">
+      {% csrf_token %}
+    {{from.as_p}}
+    <input type="submit" class="btn btn-success" value="Add">
+
+    </form>
+  </div>
+</div>
+
+{% endblock content %} 
+

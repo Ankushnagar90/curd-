@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Home page</title>
+<link rel="stylesheet" href="{% static 'crud/css/bootstrap.min.css' %}">
+</head>
+
+
+<body>
+
+  <div class="container mt-5">
+    <h2 class="test-center alert alert-danger">Function Based View CURD PROJECT</h2>
+
+    {% block content %}
+
+    {% endblock content %}
+
+  
+
+  <form >
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+    <br>
+    <label for="email">EMAIL:</label><br>
+    <input type="email" id="email" name="lname" value="email">
+    <br>
+    <label for="password">PASSWORD:</label><br>
+    <input type="password" id="pass" name="lname" value="pass">
+    <br><br>
+    <input type="submit" value="Submit">
+
+  </form>
+
+</div>
+
+  <script src="{% static 'crud/js/jquery.js%' }"></script>
+  <script src="{% static 'crud/js/popper.js%' }"></script> 
+  <script src="{% static 'crud/js/bootstrap.min.js%' }"></script>
+
+</body>
+</html>
