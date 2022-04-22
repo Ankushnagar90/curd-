@@ -9,15 +9,15 @@
 
 <body>
 
-  <div class="container mt-5">
-    <h2 class="test-center alert alert-danger">Function Based View CURD PROJECT</h2>
+  <div class="container mt-5 bg-secondary"   >
+    <h1 class="text-center alert alert-danger">Function Based View CURD PROJECT</h1>
 
     {% block content %}
 
     {% endblock content %}
 
   
-
+{% comment %}
   <form >
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname" value="John"><br>
@@ -33,7 +33,7 @@
     <input type="submit" value="Submit">
 
   </form>
-
+{% endcomment %}
 </div>
 
   <script src="{% static 'crud/js/jquery.js%' }"></script>

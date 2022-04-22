@@ -1,13 +1,12 @@
-
-from django.forms import ModelForm
+# from django.forms import ModelForm
 from .models import Person
 
 from django import forms
 # from django.core import validators
 
 
-class studentregister(forms.Form):
-    class meta:
+class studentregister(forms.ModelForm):
+    class Meta:
         model = Person
         fields = ['first_name','last_name','email','password']
 
